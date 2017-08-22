@@ -1,0 +1,1 @@
+env_wd <- "~/personal_projects/friaR"

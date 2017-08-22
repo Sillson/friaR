@@ -1,0 +1,5 @@
+# friaR
+
+-----
+
+automates my trading
