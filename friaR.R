@@ -39,6 +39,16 @@ for ( stock in stock_list ) {
   }
 }
 
+for ( stock in stock_list ) {
+  # Split the dataset into testing and training parts
+  breakpoint = floor(nrow(stock)*(2.9/3))
+  # Apply ACF and PACF f(x)
+  par(mfrow = c(1,1))
+  acf.stock = acf(stock[c(1:breakpoint),], main='ACF Plot', lag.max=100)
+  pacf.stock = pacf(stock[c(1:breakpoint),], main='PACF Plot', lag.max=100)
+  
+}
+
 
 ############
 ## Clean ENV
